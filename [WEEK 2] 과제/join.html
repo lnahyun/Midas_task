@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="joinsheet.css">
+</head>
+<body>
+    <div class="join-wrapper">
+        <h2>Register</h2>
+        <form method="post" action="서버의url" id="join-form" onsubmit="return showRegisterMessage()">
+            <input type="text" name="userName" placeholder="Name">
+            <input type="email" name="useremail" placeholder="Email">
+            <input type="password" name="userPassword" placeholder="Paaword">
+            <input type="password" name="userPassword" placeholder="Password(다시 입력)">
+            <input type="submit" value="Register">
+        </form>
+        <button onclick="goBack()" class="back-button">LOG IN</button>
+    </div>  
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function showRegisterMessage() {
+            alert('가입되었습니다!');
+            window.location.href = 'html.html';
+            return false;
+        }
+    </script>
+</body>
+</html>
