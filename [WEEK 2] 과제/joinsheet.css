@@ -53,6 +53,10 @@ body{
     border: none; 
     cursor: pointer;
 }
+#join-form > input[type="submit"]:hover{
+    background-color: #3189b9; 
+}
+
 
 .login-link, .back-button {
     display: inline-block;
