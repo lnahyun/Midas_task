@@ -35,7 +35,7 @@ body{
 }
 #login-form > input{
     width: 100%;
-    height: 48px;
+    height: 48px; 
     padding: 0 10px;
     box-sizing: border-box;
     margin-bottom: 16px;
@@ -52,6 +52,9 @@ body{
     margin-top: 20px;
     border: none; 
     cursor: pointer;
+}
+#login-form > input[type="submit"]:hover{
+    background-color: #3189b9; 
 }
 
 #remember-check-wrapper {
